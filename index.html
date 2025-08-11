@@ -16,34 +16,33 @@
     <link rel="stylesheet" href="assets/css/glide.theme.min.css">
     <!-- Glide.js END -->
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap CSS END -->
+
     <link rel="stylesheet" href="styles.css">
   </head>
   <nav class="navbar d-flex justify-content-space-between w-100">
-    <div class="logo d-iflex">
+    <div class="full-logo">
       <img src="assets/logo-with-name2.png" height="60" alt="Logo" />
     </div>
-    <div class="align-content-center">
-      <a class="btn-link d-iflex" href="#about-us">
-        Par mums
-      </a>
-      <a class="btn-link d-iflex" href="#services">
-        Mūsu pakalpojumi
-      </a>
-      <a class="btn-link d-iflex" href="#statistics">
-        Kādēļ mēs?
-      </a>
-      <a class="btn-primary d-iflex" href="#projects">
-        Projekti
-      </a>
+    <div class="short-logo">
+      <img src="assets/logo.png" height="60" alt="Logo" />
+    </div>
+    <div class="navbar-links">
+      <a class="text-link px-1" href="#about-us">Par mums</a>
+      <a class="text-link px-2" href="#services">Mūsu pakalpojumi</a>
+      <a class="text-link ps-1 pe-3" href="#statistics">Kādēļ mēs?</a>
+      <a class="btn btn-primary" href="#projects">Projekti</a>
     </div>
   </nav>
   <body class="m-0">
-    <main>
+    <main class="container-fluid p-0 m-0">
       <div class="hero-image-container">
         <img src="assets/hero-sample.jpeg" width="100%" alt="Hero Image" class="hero-image" />
         <div class="hero-image-overlay">
         <p class="font-kiez">Tavs Namdaris</p>
-        <p class="base-semibold">Pieredzējušu profesionāļu komanda jebkuram darbam</p>
+        <p class="base-semibold text-center">Pieredzējušu profesionāļu komanda jebkuram darbam</p>
         </div>
       </div>
 
@@ -56,7 +55,7 @@
         </p>
       </div>
       
-      <div class="container m-0" id="services">
+      <div class="container-fluid m-0" id="services">
         <div class="services-container">
           <div class="service-item">
             <div class="service-item-image-container">
@@ -77,10 +76,7 @@
         </div>
       </div>
 
-      <div id="statistics">
-        <p class="paragraph-title no-container">
-          Kādēļ mēs?
-        </p>
+      <div class="mb-2" id="statistics">
         <div class="statistics-container">
           <div class="statistics-item">
             <p class="base-semibold">10</p>
@@ -93,7 +89,7 @@
         </div>
       </div>
       
-      <div class="container" id="projects">
+      <div class="container-fluid" id="projects">
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
              <ul class="glide__slides">
@@ -146,17 +142,17 @@
           </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p class="base-semibold">
         Plašākai informācijai
       </p>
       <div class="d-flex">
         <span class="w-auto pe-1"><img alt="mail" src="assets/mail.svg" /></span>
-        <a href="mailto:info@tavsnamdaris.lv" tabindex="0" target="_top" class="w-auto p-0 m-0 btn-link base-regular">info@tavsnamdaris.lv</a>
+        <a href="mailto:info@tavsnamdaris.lv" tabindex="0" target="_top" class="w-auto p-0 m-0 text-link base-regular">info@tavsnamdaris.lv</a>
       </div>
       <div class="d-flex mt-2">
         <span class="w-auto pe-1"><img alt="phone" src="assets/phone.svg" /></span>
-        <a href="tel:22222222" tabindex="0" target="_top" class="w-auto p-0 m-0 btn-link base-regular">22222222</a>
+        <a href="tel:22222222" tabindex="0" target="_top" class="w-auto p-0 m-0 text-link base-regular">22222222</a>
       </div>
     </footer>
   </body>
@@ -164,6 +160,10 @@
   <!-- Glide.js -->
   <script src="assets/js/glide.min.js"></script>
   <!-- Glide.js END -->
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS END -->
 
   <script>
     var glide = new Glide('.glide', {
