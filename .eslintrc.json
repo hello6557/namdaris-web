@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "src/app/services/api/nmkk-api.schema.ts"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/template/alt-text": "off",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "object-curly-spacing": ["error", "always"],
+        "no-magic-numbers": [
+          "off",
+          {
+            "ignore": [0, 1, -1, 2, 10],
+            "ignoreArrayIndexes": true
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": "off",
+        "no-console": ["off", { "allow": ["warn", "error"] }],
+        "no-empty-function": [
+          "error",
+          {
+            "allow": ["constructors"]
+          }
+        ],
+        "prefer-const": "error",
+        "no-var": "error",
+        "require-atomic-updates": "error",
+        "no-eval": "error",
+        "max-depth": ["warn", 4],
+        "quotes": ["error", "single"],
+        "indent": ["error", 2]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "plugin:@angular-eslint/template/accessibility"
+      ],
+      "rules": {}
+    }
+  ]
+}
