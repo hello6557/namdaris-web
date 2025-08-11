@@ -1,0 +1,387 @@
+@media(max-width: 799px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media(min-width: 800px) {
+    .container{
+        width: 800px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container{
+        width: 1200px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .container{
+        width: 1500px;
+    }
+}
+
+@font-face {
+    font-family: Kiez;
+    src: url("../fonts/kiez-regular.ttf");
+}
+
+.font-kiez {
+    font-family: Kiez, sans-serif;
+    font-size: 5rem;
+}
+
+.pill{
+    background-color: var(--secondary100);
+    margin: 1.5em;
+    padding: 2em;
+    align-self: center;
+    border-radius: 1em;
+}
+
+.container{
+    margin: 1.5em;
+    padding: 0.5em;
+    align-self: center;
+}
+
+:root {
+    --primary400: #fa9b51;
+    --primary300: #fcb783;
+    --primary200: #fdd4b5;
+    --primary100: #fef1e6;
+    --secondary400: #f9ca53;
+    --secondary300: #fbd984;
+    --secondary200: #fce8b5;
+    --secondary100: #fef7e6;
+    --neutrals400: #201f1d;
+    --neutrals300: #717171;
+    --neutrals200: #d0d0d0;
+    --neutrals100: #e8e8e7;
+
+    /* Fonts */
+    --basebold-font-family: SourceSansPro-Bold, sans-serif;
+    --basebold-font-size: 1.25em;
+    --basebold-line-height: normal;
+    --basebold-font-weight: 700;
+    --basebold-font-style: normal;
+
+    --basesemibold-font-family: SourceSansPro-SemiBold, sans-serif;
+    --basesemibold-font-size: 1.25em;
+    --basesemibold-line-height: normal;
+    --basesemibold-font-weight: 600;
+    --basesemibold-font-style: normal;
+
+    --paragraphbaseregular-font-family: "Source Sans Pro", sans-serif;
+    --paragraphbaseregular-font-size: 0.875em;
+    --paragraphbaseregular-line-height: normal;
+    --paragraphbaseregular-font-weight: 400;
+    --paragraphbaseregular-font-style: normal;
+
+    --paragraphbasesemibold-font-family: SourceSansPro-SemiBold, sans-serif;
+    --paragraphbasesemibold-font-size: 1em;
+    --paragraphbasesemibold-line-height: normal;
+    --paragraphbasesemibold-font-weight: 600;
+    --paragraphbasesemibold-font-style: normal;
+
+    --baseregular-font-family: "Source Sans Pro", sans-serif;
+    --baseregular-font-size: 1em;
+    --baseregular-line-height: normal;
+    --baseregular-font-weight: 400;
+    --baseregular-font-style: normal;
+}
+
+
+body {
+    background-color: var(--secondary200);
+}
+
+.navbar{
+    background-color: var(--secondary100);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* display: block;
+    position: absolute;
+    top: 0; */
+}
+  
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: black;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border: 0;
+    border-radius: 6px;
+    font-family: var(--baseregular-font-family);
+    font-size: var(--baseregular-font-size);
+    line-height: var(--baseregular-line-height);
+    font-weight: var(--baseregular-font-weight);
+    font-style: var(--baseregular-font-style);
+    margin: 0 0.25em 0 0.25em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-iflex{
+    display: inline-flex;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--primary400);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary400);
+    box-shadow: 0 0 0 3px var(--primary200);
+    cursor: pointer;
+}
+
+.btn-link{
+    color: black;
+    background: none;
+    border: 0;
+}
+
+.btn-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-link:active{
+    text-decoration: underline;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0.5em;
+}
+
+.paragraph-base-regular{
+    font-family: var(--paragraphbaseregular-font-family);
+    font-size: var(--paragraphbaseregular-font-size);
+    line-height: var(--paragraphbaseregular-line-height);
+    font-weight: var(--paragraphbaseregular-font-weight);
+    font-style: var(--paragraphbaseregular-font-style);
+}
+
+.paragraph-base-semibold{
+    font-family: var(--paragraphbasesemibold-font-family);
+    font-size: var(--paragraphbasesemibold-font-size);
+    line-height: var(--paragraphbasesemibold-line-height);
+    font-weight: var(--paragraphbasesemibold-font-weight);
+    font-style: var(--paragraphbasesemibold-font-style);
+}
+
+.base-semibold{
+    font-family: var(--basesemibold-font-family);
+    font-size: var(--basesemibold-font-size);
+    line-height: var(--basesemibold-line-height);
+    font-weight: var(--basesemibold-font-weight);
+    font-style: var(--basesemibold-font-style);
+}
+
+.base-bold{
+    font-family: var(--basebold-font-family);
+    font-size: var(--basebold-font-size);
+    line-height: var(--basebold-line-height);
+    font-weight: var(--basebold-font-weight);
+    font-style: var(--basebold-font-style);
+}
+
+footer{
+    background-color: var(--secondary100);
+    padding: 0.5em 2em;
+    min-width: 800px;
+    width: 60%;
+    align-self: center;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em 1em 0 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.hero-image-container {
+    position: relative;
+}
+
+.hero-image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+}
+
+.hero-image-caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    background-color: var(--secondary100);
+}
+
+.statistics-item {
+    text-align: center;
+}
+
+.statistics-item p {
+    margin: 0.5em 0;
+}
+
+.paragraph-title {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.75em;
+}
+
+.image-title {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 4rem;
+}
+
+
+p.no-container {
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.service-item {
+    display: flex;
+    background-color: var(--secondary100);
+    margin: 1em;
+    width: 45%;
+    text-align: center;
+    border-radius: 1.25em;
+}
+
+.service-item-image-container{
+    position: relative;
+    border-radius: 1.25em;
+}
+
+.service-item-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1em;
+    border-radius: 1.25em;
+
+}
+
+.service-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25em;
+}
+
+.project-item {
+    width: 80%;
+}
+
+.project-item-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.glide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glide__arrow {
+    background-color: #ffffff;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.pe-0 {
+    padding-right: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.mt-2 {
+    margin-top: 0.75rem;
+}
+
+.pe-1 {
+    padding-right: 0.25rem;
+}
